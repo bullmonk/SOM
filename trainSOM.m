@@ -142,8 +142,8 @@ classes = vec2ind(y);
 
 %--------------------------------------------------------------------------
 %obatin the dates; and add to corresponding dates
-load('/Users/xunliu/Documents/MATLAB/SOM/tline.mat');
-allocation = classes';
+tline = ObtainDates();
+allocation = classes'; %allocation is a column vector, storing class number of the 
 classAllo = [allocation tline];
 
 %--------------------------------------------------------------------------
