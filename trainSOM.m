@@ -121,7 +121,9 @@ In = normc(In);
 
 
 %create a self-organizing map
-dimension1 = 30;
+
+%-----------------------------------modify the number of classes here!!!!!
+dimension1 = 30;%NUmber of classes
 dimension2 = 1;
 net = selforgmap([dimension1 dimension2]);
 
