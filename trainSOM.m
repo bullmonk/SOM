@@ -207,5 +207,6 @@ SOMPackage.y = y;
 SOMPackage.x = x;
 SOMPackage.Dates =  Dates;
 SOMPackage.coord = coord;
-SOMPackage.clm = clm;
+%SOMPackage.tline = tline;
+%SOMPackage.clm = clm;
 %--------------------------------------------------------------------------
