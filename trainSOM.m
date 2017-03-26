@@ -205,8 +205,10 @@ SOMPackage.net = net;
 SOMPackage.classAllo = classAllo;
 SOMPackage.y = y;
 SOMPackage.x = x;
+SOMPackage.n = dimension1;
 SOMPackage.Dates =  Dates;
 SOMPackage.coord = coord;
+SOMPackage.pollen = DataPackage.OutAll;
 %SOMPackage.tline = tline;
 %SOMPackage.clm = clm;
 %--------------------------------------------------------------------------
