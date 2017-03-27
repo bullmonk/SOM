@@ -1,5 +1,5 @@
 function plotClassDates(Package)
-% Package = SOMPackage;
+%Package = SOMPackage;
 pollenall = Package.pollen;
 %--------------------------------------------------------------------------
 %set up plot
@@ -23,7 +23,7 @@ clsNum = squeeze(markedDates(:,1));
 [B,ind] = unique(tline(:,1));
 ind(end+1) = length(tline(:,1))+1;
 [l,m] = size(B);
-for i=1:(l-1)
+for i=1:l
     head = ind(i);
     tail = ind(i+1)-1;
     
@@ -42,7 +42,7 @@ for i=1:(l-1)
 %   scatter(tl,pollen)
     %barplot, different colors for different classes
     colors = distinguishable_colors(n);
-    lgd = cell([1 30]);
+    lgd = cell([1 n]);
     
     hold on
     
@@ -61,7 +61,7 @@ for i=1:(l-1)
     datetick('x','keepticks','keeplimits');
     xlabel('Time of year','FontSize',30)
     ylabel('Pollen count','FontSize',30)
-    title( ['year ' num2str(1983+i)],'FontSize',30)
+    title( ['year ' num2str(1986+i)],'FontSize',30)
     set(gca,'FontSize',16)
     set(gca,'LineWidth',2);
 end

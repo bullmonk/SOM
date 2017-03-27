@@ -123,7 +123,7 @@ In = normc(In);
 %create a self-organizing map
 
 %-----------------------------------modify the number of classes here!!!!!
-dimension1 = 30;%NUmber of classes
+dimension1 = 20;%NUmber of classes
 dimension2 = 1;
 net = selforgmap([dimension1 dimension2]);
 
@@ -186,7 +186,7 @@ for i = 1:dimension1
 %         end
 %     end
     
-    clm(i,:) = median(tempcrd);
+    clm(i,:) = mean(tempcrd);
 
     
     
